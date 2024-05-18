@@ -1,0 +1,3 @@
+state == 15 mod 31
+state == 19 mod 23
+state == 11 mod 47

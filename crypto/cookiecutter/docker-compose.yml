@@ -1,0 +1,7 @@
+services:
+  cookiecutter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "40006:1337"

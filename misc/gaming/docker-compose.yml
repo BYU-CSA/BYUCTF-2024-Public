@@ -1,0 +1,20 @@
+services:
+  mcproxy:
+    image: itzg/bungeecord
+
+    container_name: gaming
+
+    environment:
+      TYPE: VELOCITY
+      TZ: "America/Denver"
+      
+      EXEC_DIRECTLY: "TRUE"
+    tty: true
+    stdin_open: true
+
+    ports:
+      - "1361:25577"
+      - "1361:25577/udp"
+    restart: unless-stopped
+    volumes:
+      - ./src:/server

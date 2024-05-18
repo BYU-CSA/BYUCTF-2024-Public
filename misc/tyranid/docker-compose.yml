@@ -1,0 +1,7 @@
+services:
+  tyranid:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "1360:40000"

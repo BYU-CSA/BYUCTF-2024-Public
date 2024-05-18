@@ -1,0 +1,7 @@
+services:
+  fake_smarties:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "1359:40000"

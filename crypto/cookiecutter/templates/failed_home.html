@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Issue</title>
+</head>
+<body>
+    <p>You can only get the flag if you're an admin!! Your cookie says you're a user, so no flag for you</p>
+    <form id="authForm" action="/authenticate"><button id="authenticate" type="submit">Get Flag</button></form>
+
+    <!-- <script>
+        document.getElementById('authForm').addEventListener('click', function(event) {
+            event.preventDefault();
+
+            fetch('/authenticate', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Cookie': document.cookie
+                }
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.body.innerHTML = data;
+            })
+            .catch(error => {
+                console.erorr('Error:', error)
+            })
+        });
+    </script> -->
+</body>
+</html>
